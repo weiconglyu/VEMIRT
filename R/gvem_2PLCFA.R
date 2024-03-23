@@ -30,8 +30,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' gvem_2PLCFA(exampleData_2pl, exampleIndic_cfa2pl)
-#' }
+#' gvem_2PLCFA(exampleData_2pl, exampleIndic_cfa2pl)}
 gvem_2PLCFA <- function(u,indic,max.iter=5000,SE.est=FALSE) {
   start=Sys.time()
   u=data.matrix(u)

@@ -12,8 +12,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' pa_poly(exampleData_2pl, n.iter=20)
-#' }
+#' pa_poly(exampleData_2pl, n.iter=20)}
 pa_poly=function(data,n.iter=10,figure=TRUE){
   J<-dim(data)[2]
   N<-dim(data)[1]

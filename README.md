@@ -14,8 +14,9 @@ designs. The package contains several example datasets and functions for
 - Exploratory and Confirmatory M2PL Analysis
 - Exploratory and Confirmatory M3PL Analysis
 - Standard error estimates for Confirmatory M2PL Analysis
-- Bootstrap sampling and importance sampling correction for Confirmatory
-  M2PL Analysis
+- Bootstrap sampling and importance sampling correction for M2PL
+  Analysis
+- Differential item functioning detection in M2PL Analysis
 
 ## Installation
 
@@ -35,5 +36,5 @@ To install this package from source:
     package from [GitHub](https://github.com/) with:
 
 ``` r
-devtools::install_github("JiayingX/VEMIRT")
+devtools::install_github("weiconglyu/VEMIRT")
 ```

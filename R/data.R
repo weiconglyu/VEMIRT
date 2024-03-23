@@ -62,3 +62,25 @@ NULL
 #' @format A data frame with 45 items and 3 factors. Items 1, 16, and 19 can
 #' be combined as a triangular matrix to satisfy constraint 2
 "exampleIndic_efa3pl_c2"
+
+#' Simulated Data Set for DIF Analysis
+#'
+#' @format A list of components of the data set:
+#' \tabular{ll}{
+#' \code{ Y}\tab Item responses\cr
+#' \tab\cr
+#' \code{D}\tab Loading indicators\cr
+#' \tab\cr
+#' \code{X}\tab Group indicators\cr
+#' \tab\cr
+#' \code{j}\tab Number of DIF items (the first \code{j} items have DIF)\cr
+#' \tab\cr
+#' \code{params}\tab A list of true parameters used for generating the item responses:\cr
+#' \tab\cr
+#' \code{ ...$a}\tab Slopes\cr
+#' \tab\cr
+#' \code{ ...$b}\tab Negated intercepts\cr
+#' \tab\cr
+#' \code{ ...$theta}\tab Latent traits\cr
+#' }
+'exampleDIF'

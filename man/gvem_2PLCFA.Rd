@@ -42,8 +42,7 @@ Confirmatory M2PL Analysis
 }
 \examples{
 \dontrun{
-gvem_2PLCFA(exampleData_2pl, exampleIndic_cfa2pl)
-}
+gvem_2PLCFA(exampleData_2pl, exampleIndic_cfa2pl)}
 }
 \seealso{
 \code{\link{sgvem_3PLCFA}},\code{\link{importanceSampling}},\code{\link{bs_2PLCFA}}

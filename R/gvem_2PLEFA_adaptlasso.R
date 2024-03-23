@@ -57,8 +57,7 @@
 #' @examples
 #' \dontrun{
 #' gvem_2PLEFA_adaptlasso(exampleData_2pl, exampleIndic_efa2pl_c1,constrain="C1",non_pen=NULL,gamma=2)
-#' gvem_2PLEFA_adaptlasso(exampleData_2pl, exampleIndic_efa2pl_c2,constrain="C2",non_pen=61,gamma=2)
-#' }
+#' gvem_2PLEFA_adaptlasso(exampleData_2pl, exampleIndic_efa2pl_c2,constrain="C2",non_pen=61,gamma=2)}
 
 #main function for gvem_2PLEFA_adaptlasso
 gvem_2PLEFA_adaptlasso<-function(u,indic,max.iter=5000,constrain="C1",non_pen=NULL,gamma=2){

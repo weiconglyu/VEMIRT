@@ -65,8 +65,7 @@
 #' constrain="C1",non_pen=NULL)
 #' sgvem_3PLEFA_lasso(exampleData_3pl, exampleIndic_efa3pl_c2,samp=50,
 #' forgetrate=0.51,mu_b=0,sigma2_b=4,Alpha=10,Beta=40,max.iter=5000,
-#' constrain="C2",non_pen=19)
-#' }
+#' constrain="C2",non_pen=19)}
 
 #main function for sgvem_3PLEFA_lasso
 sgvem_3PLEFA_lasso<-function(u,indic,samp=50,forgetrate=0.51,

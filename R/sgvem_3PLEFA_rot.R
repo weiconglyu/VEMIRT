@@ -38,8 +38,7 @@
 #' @examples
 #' \dontrun{
 #' sgvem_3PLEFA_rot(exampleData_3pl, 3,samp=50,forgetrate=0.51,
-#' mu_b=0,sigma2_b=4,Alpha=10,Beta=40,max.iter=5000,rot="Promax")
-#' }
+#' mu_b=0,sigma2_b=4,Alpha=10,Beta=40,max.iter=5000,rot="Promax")}
 sgvem_3PLEFA_rot <- function(u,domain, samp=50,forgetrate=0.51,mu_b,sigma2_b,Alpha,Beta,max.iter=5000,rot="Promax") {
   start=Sys.time()
   u=data.matrix(u)

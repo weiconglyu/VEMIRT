@@ -41,8 +41,7 @@
 #' @examples
 #' \dontrun{
 #' sgvem_3PLCFA(exampleData_3pl, exampleIndic_cfa3pl,samp=50,forgetrate=0.51,
-#' mu_b=0,sigma2_b=4,Alpha=10,Beta=40)
-#' }
+#' mu_b=0,sigma2_b=4,Alpha=10,Beta=40)}
 sgvem_3PLCFA <- function(u,indic,samp=50,forgetrate=0.51,mu_b,sigma2_b,Alpha,Beta,max.iter=5000) {
   start=Sys.time()
   u=data.matrix(u)

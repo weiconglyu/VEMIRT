@@ -25,6 +25,5 @@ Identify the number of factors
 }
 \examples{
 \dontrun{
-pa_poly(exampleData_2pl, n.iter=20)
-}
+pa_poly(exampleData_2pl, n.iter=20)}
 }

@@ -51,8 +51,7 @@
 #' @examples
 #' \dontrun{
 #' gvem_2PLEFA_lasso(exampleData_2pl, exampleIndic_efa2pl_c1,constrain="C1")
-#' gvem_2PLEFA_lasso(exampleData_2pl, exampleIndic_efa2pl_c2,constrain="C2",non_pen=61)
-#' }
+#' gvem_2PLEFA_lasso(exampleData_2pl, exampleIndic_efa2pl_c2,constrain="C2",non_pen=61)}
 
 #main function for gvem_2PLEFA_lasso
 gvem_2PLEFA_lasso<-function(u,indic,max.iter=5000,constrain="C1",non_pen=NULL){

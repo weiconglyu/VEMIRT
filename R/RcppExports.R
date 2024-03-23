@@ -121,6 +121,46 @@ palc23pl1 <- function(u, a, s, lbd, id_1, eta, new_b, SIGMA, MU, dec_st, prev_de
     .Call('_VEMIRT_palc23pl1', PACKAGE = 'VEMIRT', u, a, s, lbd, id_1, eta, new_b, SIGMA, MU, dec_st, prev_delta, prev_deriv2, pc, delta1, deriv22)
 }
 
+sumoverk <- function(G, rgky, aj, dj, betjy, gamjy, X) {
+    .Call('_VEMIRT_sumoverk', PACKAGE = 'VEMIRT', G, rgky, aj, dj, betjy, gamjy, X)
+}
+
+ngest <- function(LiA, y, Nvec, G) {
+    .Call('_VEMIRT_ngest', PACKAGE = 'VEMIRT', LiA, y, Nvec, G)
+}
+
+rgkest <- function(j, Xijk, LiA, y, Nvec, G, N, m) {
+    .Call('_VEMIRT_rgkest', PACKAGE = 'VEMIRT', j, Xijk, LiA, y, Nvec, G, N, m)
+}
+
+eigenMapMatMult <- function(A, B) {
+    .Call('_VEMIRT_eigenMapMatMult', PACKAGE = 'VEMIRT', A, B)
+}
+
+dmvnrm2 <- function(x, mean, sigma, logd = FALSE) {
+    .Call('_VEMIRT_dmvnrm2', PACKAGE = 'VEMIRT', x, mean, sigma, logd)
+}
+
+Estep1 <- function(resp, Nvec, X, y, G, yallgroup, Mulist, Siglist, gra, grd, grbeta, grgamma, r, J, m, N) {
+    .Call('_VEMIRT_Estep1', PACKAGE = 'VEMIRT', resp, Nvec, X, y, G, yallgroup, Mulist, Siglist, gra, grd, grbeta, grgamma, r, J, m, N)
+}
+
+scocal <- function(j, ng, rgk, a, d, bet, gam, maxtol, X, yallgroup, y, G, r, m, eta) {
+    .Call('_VEMIRT_scocal', PACKAGE = 'VEMIRT', j, ng, rgk, a, d, bet, gam, maxtol, X, yallgroup, y, G, r, m, eta)
+}
+
+soft2 <- function(s, tau) {
+    .Call('_VEMIRT_soft2', PACKAGE = 'VEMIRT', s, tau)
+}
+
+Mstep <- function(j, ng, rgk, gra, grd, grbeta, grgamma, maxtol, X, yallgroup, y, G, r, m, eta) {
+    .Call('_VEMIRT_Mstep', PACKAGE = 'VEMIRT', j, ng, rgk, gra, grd, grbeta, grgamma, maxtol, X, yallgroup, y, G, r, m, eta)
+}
+
+Mstepadapt <- function(j, ng, rgk, gra, grd, grbeta, grbeta00, grgamma, grgamma00, maxtol, X, yallgroup, y, G, r, m, eta, lam) {
+    .Call('_VEMIRT_Mstepadapt', PACKAGE = 'VEMIRT', j, ng, rgk, gra, grd, grbeta, grbeta00, grgamma, grgamma00, maxtol, X, yallgroup, y, G, r, m, eta, lam)
+}
+
 sampling <- function(mu_i, sig_i, person, domain, S, M) {
     .Call('_VEMIRT_sampling', PACKAGE = 'VEMIRT', mu_i, sig_i, person, domain, S, M)
 }

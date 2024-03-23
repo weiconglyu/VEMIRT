@@ -28,8 +28,7 @@
 #' @examples
 #' \dontrun{
 #' gvem_2PLEFA_rot(exampleData_2pl, domain=5,max.iter=3000)
-#' gvem_2PLEFA_rot(exampleData_2pl, domain=5,rot="cfQ")
-#' }
+#' gvem_2PLEFA_rot(exampleData_2pl, domain=5,rot="cfQ")}
 gvem_2PLEFA_rot <- function(u, domain,max.iter=5000,rot="Promax") {
   start=Sys.time()
   u=data.matrix(u)

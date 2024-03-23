@@ -38,8 +38,7 @@
 #' @examples
 #' \dontrun{
 #' CFA_result <- gvem_2PLCFA(exampleData_2pl, exampleIndic_cfa2pl)
-#' importanceSampling(exampleData_2pl,CFA_result)
-#' }
+#' importanceSampling(exampleData_2pl,CFA_result)}
 importanceSampling<-function(u,gvem_result,S=10,M=10,max.iter=10){
   u=data.matrix(u)
   person<-dim(u)[1]

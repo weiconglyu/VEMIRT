@@ -16,8 +16,7 @@
 #' @examples
 #' \dontrun{
 #' gvem_result <- gvem_2PLCFA(exampleData_2pl, exampleIndic_cfa2pl)
-#' bs_2PLCFA(gvem_result, boots=10)
-#' }
+#' bs_2PLCFA(gvem_result, boots=10)}
 bs_2PLCFA <- function(gvem_result,boots=5){
   domain <- dim(gvem_result$ra)[2]
   indic <- gvem_result$Q_mat

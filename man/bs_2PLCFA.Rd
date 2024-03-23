@@ -26,8 +26,7 @@ to correct the bias on item parameters and compute standard errors under M2PL mo
 \examples{
 \dontrun{
 gvem_result <- gvem_2PLCFA(exampleData_2pl, exampleIndic_cfa2pl)
-bs_2PLCFA(gvem_result, boots=10)
-}
+bs_2PLCFA(gvem_result, boots=10)}
 }
 \seealso{
 \code{\link{gvem_2PLCFA}},\code{\link{importanceSampling}}
